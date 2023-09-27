@@ -1,0 +1,51 @@
+package base_ex;
+
+public class HashCodeEx {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("홍길동".hashCode());
+		System.out.println("홍이동".hashCode());
+		
+		System.out.println("===============");
+		
+		System.out.println("홍길동".hashCode());
+		System.out.println("홍길동".hashCode());
+		
+		
+		
+		// 
+		Student s1 = new Student(1, "홍길동");
+		Student s2 = new Student(2, "홍이동");
+		
+		
+		// 현재는 다른 객체이나, Student 클래스에서 
+		// 같은 학생이다라는 의미를 재정의하는 코드를 작성해서
+		// 같은 학생임을 알리는 그런 작업을 할 것임
+//		System.out.println(s1 == s2);
+//		System.out.println(s1.equals(s2));
+		
+		
+//		System.out.println(s1.hashCode());
+//		System.out.println(s2.hashCode());
+		
+		
+		// 재정의 후 다시 할 것임
+		
+		
+		if(s1.hashCode() == s2.hashCode()) {
+			if(s1.equals(s2)) {
+				System.out.println("같은 학생-동등객체");
+			} else {
+				System.out.println("다른 학생");
+			}
+		} else {
+			System.out.println("해시코드가 다르므로 다른 학생");
+		}
+		
+		
+	}
+	
+}
+

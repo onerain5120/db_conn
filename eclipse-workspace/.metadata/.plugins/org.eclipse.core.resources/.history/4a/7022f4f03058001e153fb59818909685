@@ -1,0 +1,15 @@
+package base_ex;
+
+public class ToStringEx {
+
+	public static void main(String[] args) {
+		
+		
+		SmartPhone sp = new SmartPhone("ss", "android");
+		System.out.println(sp);
+		
+		
+		
+	}
+	
+}

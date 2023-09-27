@@ -1,0 +1,50 @@
+package base_ex;
+
+public class Student {
+	
+	private int no;
+	private String name;
+	
+	
+	public Student(int no, String name) {
+		super();
+		this.no = no;
+		this.name = name;
+	}
+	
+	
+	public int getNo() {
+		return no;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	// 이 클래스를 이용해서 만들어진 객체가 진정한 동등 객체인지(hashCode() 리턴값도 같고 equals() 리턴값이 같다.) 확인해주는 코드를 재정의
+	
+	// 같은 학생이지 여부를 확인하는 방법으로 hashCode()를 재정의함
+	@Override
+	public int hashCode() {
+
+		int hashCode = this.no + name.hashCode(); // 1 + 54150062
+		
+		return hashCode;
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if(obj instanceof Student stu) {
+			if(this.no == stu.getNo() && this.name.equals(stu.getName())) {
+				return true;
+			}
+		}
+		
+		
+		return false;
+	}
+	
+	
+
+}

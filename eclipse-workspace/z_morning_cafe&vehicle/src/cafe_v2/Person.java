@@ -1,0 +1,88 @@
+package cafe_v2;
+
+public class Person {
+
+
+	// 필
+	String name;
+	int money;
+	
+	
+	// 생
+	public Person() {
+		
+	}
+	
+	public Person(String name, int money) {
+		this.name = name;
+		this.money = money;
+	}
+
+	
+	// 메
+	void drinkStarAme(StarCafe star) {
+//		StarCafe star = new StarCafe();
+		
+		if (money < star.amePrice) {
+			System.err.println(name + " 님의 잔액은 " + money + "원 밖에 남지 않아 " + star.name + " 아메리카노를 구입하실 수 없습니다." );
+		} else {
+			System.out.println(name + " 님께서는 " + star.amePrice + "원을 내고 " + star.name + " 아메리카노를 구입했습니다.");
+			money -= star.amePrice;
+			System.out.println(name + " 님의 잔돈은 " + money + "원 입니다.");
+			star.profit("ame");
+		}
+		System.out.println("--------------------------------");
+	}
+	
+	void drinkStarLatte(StarCafe star) {
+//		StarCafe star = new StarCafe();
+		
+		if (money < star.amePrice) {
+			System.err.println(name + " 님의 잔액은 " + money + "원 밖에 남지 않아 " + star.name + " 라떼를 구입하실 수 없습니다." );
+		} else {
+			System.out.println(name + " 님께서는 " + star.lattePrice + "원을 내고 " + star.name + " 라떼를 구입했습니다.");
+			money -= star.lattePrice;
+			System.out.println(name + " 님의 잔돈은 " + money + "원 입니다.");
+			star.profit("latte");
+		}
+		System.out.println("--------------------------------");
+	}
+	
+	void drinBbeanAme(BeanCafe bean) {
+//		BeanCafe bean = new BeanCafe();
+		
+		if (money < bean.amePrice) {
+			System.err.println(name + " 님의 잔액은 " + money + "원 밖에 남지 않아 콩 다방 아메리카노를 구입하실 수 없습니다." );
+		} else {
+			System.out.println(name + " 님께서는 " + bean.amePrice + "원을 내고 콩 다방 아메리카노를 구입했습니다.");
+			money -= bean.amePrice;
+			System.out.println(name + " 님의 잔돈은 " + money + "원 입니다.");
+			bean.profit("ame");
+		}
+		System.out.println("--------------------------------");
+	}
+	
+	void drinkBeanLatte(BeanCafe bean) {
+//		BeanCafe bean = new BeanCafe();
+		
+		if (money < bean.amePrice) {
+			System.err.println(name + " 님의 잔액은 " + money + "원 밖에 남지 않아 콩 다방 라떼를 구입하실 수 없습니다." );
+		} else {
+			System.out.println(name + " 님께서는 " + bean.lattePrice + "원을 내고 콩 다방 라떼를 구입했습니다.");
+			money -= bean.lattePrice;
+			System.out.println(name + " 님의 잔돈은 " + money + "원 입니다.");
+			bean.profit("latte");
+		}
+		System.out.println("--------------------------------");
+	}
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+}

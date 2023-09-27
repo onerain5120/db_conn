@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ex.SingletonEX&apos; to &apos;SingletonEx&apos;&#x0D;&#x0A;- Original project: &apos;basic4&apos;&#x0D;&#x0A;- Original element: &apos;ex.SingletonEX&apos;&#x0D;&#x0A;- Renamed element: &apos;ex.SingletonEx&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SingletonEX&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ex{SingletonEX.java[SingletonEX" matchStrategy="1" name="SingletonEx" qualified="false" references="true" similarDeclarations="false" stamp="1694145694912" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,44 @@
+package box_ex5;
+
+public class MeasureRunTimeEx {
+
+	
+	public static void main(String[] args) {
+		
+//		long start = System.nanoTime();
+//		
+//		int tot = 0;
+//		for(int i = 0 ; i < 100000 ; i++) {
+//			tot += i;
+//		}
+//		
+//		long end = System.nanoTime();
+//		System.out.println((end - start) + "초");
+//		
+//		System.out.println("==========");
+//		
+//		long start2 = System.nanoTime();
+//		
+//		int tot2 = 0;
+//		for(int i = 0; i < 200000 ; i++) {
+//			tot2 += i;
+//		}
+//		
+//		long end2 = System.nanoTime();
+//		System.out.println((end2 - start2) + "초");
+		
+		
+		System.out.println(System.getProperty("java.specification.version"));
+		System.out.println(System.getProperty("os.name"));
+		System.out.println(System.getProperty("user.name"));
+		System.out.println(System.getProperty("user.home"));
+		System.out.println(System.getProperty("user.dir"));
+		
+		
+		System.getProperties();
+		
+		
+		
+		
+	}
+}

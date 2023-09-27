@@ -1,0 +1,16 @@
+package box_ex5;
+
+public class BoxingUnBoxingEx {
+
+	public static void main(String[] args) {
+		
+		// Boxing
+		Integer obj = 100;
+		System.out.println(obj);
+		System.out.println(obj.intValue());
+		
+		
+	}
+	
+	
+}

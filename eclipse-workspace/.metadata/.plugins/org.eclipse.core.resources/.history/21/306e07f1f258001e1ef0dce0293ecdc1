@@ -1,0 +1,14 @@
+package intermediate5;
+
+public class MemberTest {
+
+	public static void main(String[] args) {
+		
+		Member m1 = new Member("hong", "홍길동", 29);
+		
+		System.out.println();	
+		m1.getId();
+		
+	}
+	
+}

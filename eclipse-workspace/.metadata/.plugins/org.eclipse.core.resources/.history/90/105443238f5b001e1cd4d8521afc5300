@@ -1,0 +1,35 @@
+package generic_ex3;
+
+public class Course {
+
+	// 필
+	
+	
+	// 생
+	
+	
+	
+	
+	// 메
+	// ? 제네릭 타입을 매개값이나 리턴타입으로 사용할 때 타입 파라미터로 ?(와일드카드)를 사용할 수 있다.
+	// ?는 범위에 있는 모든 타입으로 대체할 수 있다는 표시
+	// 모든 사람이 등록 가능
+	
+	public static void registerCourse1(Applicant<?> applicant) {
+		System.out.println(applicant.kind.getClass().getSimpleName() + "이(가) 코스1을 등록함");
+	}
+
+	// 학생만 등록 가능
+	public static void registerCourse2(Applicant<? extends Student> applicant) {
+		System.out.println(applicant.kind.getClass().getSimpleName() + "이(가) 코스2을 등록함");
+	}
+
+	// 직장인 및 일반인 등록 가능
+	public static void registerCourse3(Applicant<? super Worker> applicant) {
+		System.out.println(applicant.kind.getClass().getSimpleName() + "이(가) 코스3을 등록함");
+	}
+
+}
+
+
+

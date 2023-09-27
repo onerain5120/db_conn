@@ -1,0 +1,7 @@
+package generic_ex3;
+
+public class CarAgency implements Rentable<Car> {
+
+	
+	
+}

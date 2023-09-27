@@ -1,0 +1,33 @@
+package sec01.ex01;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class FirstServlet extends HttpServlet{
+
+	@Override
+	public void init() throws ServletException {
+		
+		System.out.println("FirstServlet 객체가 만들어지면서 초기화함");
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("클라이언트가 서버에게 get방식의 요청을 함");
+	}
+	
+	
+	@Override
+	public void destroy() {
+		System.out.println("destroy() 메서드 호출됨");
+
+	}
+	
+}
+
+
+

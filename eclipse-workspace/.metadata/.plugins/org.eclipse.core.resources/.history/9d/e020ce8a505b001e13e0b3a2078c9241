@@ -1,0 +1,19 @@
+package generic_ex3;
+
+public class Course {
+
+	public static void registerCourse1() {
+		
+	}
+
+
+	public static void registerCourse2() {
+		
+	}
+
+
+	public static void registerCourse3() {
+		
+	}
+
+}

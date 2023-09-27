@@ -1,0 +1,26 @@
+package thread_ex;
+
+public class ThreadEx1 {
+
+	public static void main(String[] args) {
+		
+		
+		for ( int i = 0 ; i < 5 ; i++ ) {
+			System.out.println("띵");
+			
+			try {
+				Thread.sleep(1000);
+			} catch(InterruptedException e) {
+			}
+			
+		}
+		
+		System.out.println("==================");
+		
+		for ( int i = 0 ; i < 5 ; i++ ) {
+			System.out.println("땅");
+		}
+		
+	}
+
+}

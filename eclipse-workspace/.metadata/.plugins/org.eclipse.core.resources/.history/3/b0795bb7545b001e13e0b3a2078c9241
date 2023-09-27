@@ -1,0 +1,12 @@
+package generic_ex3;
+
+public class GenericTest2 {
+
+	public static void main(String[] args) {
+		
+		Course.registerCourse1(new Applicant<Person>(new Person()));
+		
+		
+		
+	}
+}

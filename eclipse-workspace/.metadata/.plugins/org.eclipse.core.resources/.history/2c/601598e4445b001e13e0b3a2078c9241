@@ -1,0 +1,9 @@
+package generic_ex3;
+
+public class Home implements Rentable {
+	
+	@Override
+	public Object rent() {
+		return null;
+	}
+}

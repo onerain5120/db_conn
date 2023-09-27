@@ -1,0 +1,21 @@
+package generic_ex3;
+
+public class GenericEx {
+
+	static <T> boolean compare(T t1, T t2) {
+		return false;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		compare(10, 20);
+			
+		
+		
+		
+	}
+	
+}

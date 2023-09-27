@@ -1,0 +1,31 @@
+package generic_ex;
+
+public interface Rentable<T> {
+	
+	
+	// 상
+	
+	
+	
+	
+	// 추
+	public abstract T rend();
+	
+	
+	
+	
+	
+	// 디
+	
+	
+	
+	
+	
+	
+	// 정
+
+	
+	
+	
+	
+}

@@ -1,0 +1,30 @@
+package sec01.ex01;
+
+import java.sql.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+//VO
+
+@Data  //@Data 어노테이션은 @Getter @Setter @ToString 을 모두 대체
+@NoArgsConstructor
+@AllArgsConstructor
+public class MemberVO {
+
+	private String id;
+	private String pwd;
+	private String name;
+	private String email;
+	private Date joindate;
+	public Date getJoindate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+}
+

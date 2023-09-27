@@ -1,0 +1,17 @@
+package studyTest;
+
+public class MemberTest {
+
+	
+	public static void main(String[] args) {
+		
+		Member member = new Member("onerain");
+		
+		
+		
+//		System.out.println(member.equals(member));
+		
+		boolean mem1 = member.equals(member);
+		System.out.println(mem1);
+	}
+}

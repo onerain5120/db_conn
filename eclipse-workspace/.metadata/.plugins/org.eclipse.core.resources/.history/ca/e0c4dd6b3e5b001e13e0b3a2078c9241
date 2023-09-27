@@ -1,0 +1,21 @@
+package generic_ex;
+
+public class GenericEx {
+
+	public static void main(String[] args) {
+		
+		Box box = new Box();
+		
+		box.content = "apple";
+		
+		System.out.println(box.content);
+
+		
+		box.content = 10;
+		
+		System.out.println(box.content);
+		
+		
+	}
+	
+}

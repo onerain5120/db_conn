@@ -1,0 +1,32 @@
+package collection_ex;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetEx {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Set<String> set = new HashSet<>();
+		
+		
+		set.add("Java");
+		set.add("Java");
+		set.add("SQL");
+		set.add("JDBC");
+		set.add("SPRING");
+		set.add("Spring");
+		set.add("SPRING");
+		set.add("SPRINGBoot");
+		
+		for(String i : set) {
+			System.out.println(i);
+		}
+		
+		
+		
+		
+	}
+}
