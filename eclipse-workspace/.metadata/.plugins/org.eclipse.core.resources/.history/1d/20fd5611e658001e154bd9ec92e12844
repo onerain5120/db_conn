@@ -1,0 +1,18 @@
+package base_ex4;
+
+import java.lang.reflect.Method;
+
+public class PrintAnnotationTest {
+
+	
+	public static void main(String[] args) {
+		Method[] declaredMethods = Service.class.getDeclaredMethods();
+		
+//		System.out.println(declaredMethods);
+		
+		for (Method method : declaredMethods) {
+			System.out.println(method);
+		}
+		
+	}
+}

@@ -1,0 +1,29 @@
+package exceptionEx;
+
+public class CatchByExceptionKindEx {
+
+	public static void main(String[] args) {
+		
+//		System.out.println(args[0]);
+//		System.out.println(args[1]);
+		
+		
+		try {
+			
+		} catch (NumberFormatException e) {
+			
+		}
+		
+		
+		int num1;
+		int num2;
+				
+		System.out.println(num1 + num2);
+		
+	}
+	
+}
+
+
+
+

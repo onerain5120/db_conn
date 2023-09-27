@@ -1,0 +1,14 @@
+package base_ex3;
+
+public class StudentEx3 {
+	
+	public static void main(String[] args) {
+		
+		Student3 stu1 = new Student3(24, "홍길동");
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package exceptionEx;
+
+public class CatchByExceptionKindEx {
+
+	public static void main(String[] args) {
+		
+//		System.out.println(args[0]);
+//		System.out.println(args[1]);
+		
+		int num1;
+		int num2;
+		
+		try {
+			num1 = Integer.parseInt(args[0]);
+			num2 = Integer.parseInt(args[1]);
+			System.out.println(num1 + num2);
+		} catch (NumberFormatException e) {
+			System.out.println("숫자만 들어갈 수 있습니다.");
+		}
+		
+		
+		
+	}
+	
+}
+
+
+
+

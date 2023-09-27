@@ -1,0 +1,20 @@
+package base_ex;
+
+public class ToStringEx {
+
+	public static void main(String[] args) {
+		
+		
+		SmartPhone sp = new SmartPhone("삼성", "android");
+		
+		// 원래는 sp 객체만 찍으면 주소값이 나오는 게 맞는 건데, 
+		// SmartPhone 클래스에서 toString()메서드를 재정의 했기 떄문에 그냥 값이 나옴
+		System.out.println(sp);
+		
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,28 @@
+package exceptionEx;
+
+public class NullPointerExceptionEx {
+
+	public static void main(String[] args) {
+
+//		String str = "good";
+		String str = null;
+//		System.out.println(str);	
+		
+		
+
+		
+		
+		
+		try {  // 예외가 날 수 있는 코드
+			System.out.println(str.length());
+		} catch (NullPointerException e) { // 예외가 나면 여기로 옴
+			
+		}
+		
+		
+		System.out.println("hi");
+		
+		
+	}
+
+}

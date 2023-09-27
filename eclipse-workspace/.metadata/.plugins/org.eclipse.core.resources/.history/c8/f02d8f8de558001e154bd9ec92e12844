@@ -1,0 +1,11 @@
+package base_ex4;
+
+public class Service {
+
+	@PrintAnnotation
+	public void method() {
+		System.out.println("실행 내용1");
+	}
+	
+	
+}

@@ -1,0 +1,27 @@
+package base_ex;
+
+public class ObjectEx {
+
+	
+	public static void main(String[] args) {
+	
+//		System.out.println(new Object());
+//		System.out.println(new Object().toString());
+	
+		Object obj1 = new Object();
+		System.out.println(obj1);
+		System.out.println(obj1.toString());
+	
+		System.out.println("=================");
+		Object obj2 = obj1;
+		
+		System.out.println(obj2);
+		
+		System.out.println(obj1.equals(obj2));
+		System.out.println(obj1 == obj2);
+		
+		
+	}
+	
+	
+}

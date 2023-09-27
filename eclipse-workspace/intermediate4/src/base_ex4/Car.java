@@ -1,0 +1,17 @@
+package base_ex4;
+
+public class Car {
+	
+	String color;
+	
+	public Car() {
+		
+	}
+	
+	public void run() {
+		
+	}
+	
+	
+	
+}

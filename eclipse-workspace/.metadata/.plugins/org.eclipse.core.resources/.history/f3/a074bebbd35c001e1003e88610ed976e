@@ -1,0 +1,103 @@
+package box_ex5;
+
+import java.util.Properties;
+import java.util.Set;
+import java.util.StringTokenizer;
+import java.util.regex.Pattern;
+
+public class MeasureRunTimeEx_StringEx {
+
+	public static void main(String[] args) {
+
+//		long start = System.nanoTime();
+//		
+//		int tot = 0;
+//		for(int i = 0 ; i < 100000 ; i++) {
+//			tot += i;
+//		}
+//		
+//		long end = System.nanoTime();
+//		System.out.println((end - start) + "초");
+//		
+//		System.out.println("==========");
+//		
+//		long start2 = System.nanoTime();
+//		
+//		int tot2 = 0;
+//		for(int i = 0; i < 200000 ; i++) {
+//			tot2 += i;
+//		}
+//		
+//		long end2 = System.nanoTime();
+//		System.out.println((end2 - start2) + "초");
+
+//		System.out.println(System.getProperty("java.specification.version"));
+//		System.out.println(System.getProperty("os.name"));
+//		System.out.println(System.getProperty("user.name"));
+//		System.out.println(System.getProperty("user.home"));
+//		System.out.println(System.getProperty("user.dir"));
+
+		Properties properties = System.getProperties();
+//		System.out.println("==================");
+//		System.out.println(properties);
+
+		Set<Object> keySet = properties.keySet();
+
+		for (Object key : keySet) {
+			String k = (String) key;
+			String value = System.getProperty(k);
+			System.out.printf("%s : %s \n", k, value);
+
+		}
+
+		// 문자열 조작시 StringBuilder 사용하면 메모리 절약 (대규모 문자열 작업시 사용함)
+		StringBuilder stbuilder = new StringBuilder();
+
+		stbuilder.append("DEF");
+		System.out.println(stbuilder);
+
+		stbuilder.insert(0, "ABC");
+		System.out.println(stbuilder);
+
+		stbuilder.insert(0, 2);
+		System.out.println(stbuilder);
+
+		String data = "홍길돌,이수홍,박연수";
+
+		String[] strArr = data.split(",");
+		for (String str : strArr) {
+			System.out.println(str);
+		}
+
+		System.out.println("----------------------");
+
+		String data2 = "홍길돌,이수홍,박연수";
+
+		StringTokenizer strTokenizer = new StringTokenizer(data2, ",");
+
+		System.out.println(strTokenizer);
+
+		while (strTokenizer.hasMoreElements()) {
+			String str = strTokenizer.nextToken();
+			System.out.println(str);
+
+		}
+
+		// 정규표현식(Regular Expression)
+		// 전화번호에 대한 정규표현식
+		
+		String regExp = "(02|010)-\\d{3,4}-\\d{4}";
+		
+		String sample = "010-123-4567";
+		
+		
+		boolean flag = Pattern.matches(regExp, sample);
+		
+		if(flag) {
+			System.out.println("패턴이 일치함");
+		} else {
+			System.out.println("패턴이 일치하지 않음");
+		}
+		
+	}
+}

@@ -1,0 +1,13 @@
+package studyTest;
+
+public class MemberTest {
+
+	
+	public static void main(String[] args) {
+		
+		Member member = new Member("onerain");
+		
+		System.out.println(member.equals(member));
+		
+	}
+}

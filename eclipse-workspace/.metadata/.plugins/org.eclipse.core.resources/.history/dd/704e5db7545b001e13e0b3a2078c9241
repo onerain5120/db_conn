@@ -1,0 +1,15 @@
+package generic_ex3;
+
+public class Applicant<T> {
+
+	public T kind;
+	
+	public Applicant() {
+		
+	}
+	
+	public Applicant(T kind) {
+		this.kind = kind;
+	}
+	
+}

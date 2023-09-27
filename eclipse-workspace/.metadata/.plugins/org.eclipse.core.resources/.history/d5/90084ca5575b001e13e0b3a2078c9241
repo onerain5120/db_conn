@@ -1,0 +1,21 @@
+package generic_ex3;
+
+public class Applicant<T> {
+
+	// 지원자 종류가 kind
+	// 지원자 종류의 타입이 어떤지 모른 상태임, 
+	// 거기에는 Person 타입 및 Person의 자식 클래스인(Worker, Student, HighStudent, MiddleStudent) 
+	// 으로 들어갈 수 있게 하고자 함
+	public T kind;
+	
+	public Applicant() {
+		
+	}
+	
+	public Applicant(T kind) {
+		this.kind = kind;
+	}
+	
+}
+
+

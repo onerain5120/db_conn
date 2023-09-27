@@ -1,0 +1,51 @@
+package collection_ex;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class HashMapEx {
+
+	
+	public static void main(String[] args) {
+		
+		Map<String, Integer> map  = new HashMap<>();
+		
+		map.put("신용권", 85);
+		map.put("홍길동", 90);
+		map.put("동장군", 80);
+		map.put("홍길동", 95);
+		
+		
+		
+		int score = map.get("신용권");
+		System.out.println(score);
+		
+		
+		// 전체를 출력
+		
+		// 1) 향상된 for문은 안됨, 왜냐하면 키와 벨류형태를 담은 Map.Entry 형태이므로 키와 값을 각각 받아서 뽑아야 함
+//		for (String key : map) {
+//			
+//		}
+		
+		
+		// 2-1) 키부터 뽑기
+		Set<String> keySet = map.keySet();
+		
+		System.out.println(keySet);
+
+		// 2-2) 벨류부터 뽑기 키를 알아야 하므로, 키셋을 iterator 객체로 만들어서 뽑을 수 밖에 없음
+		Iterator<String> iterator = keySet.iterator();
+		
+		while(iterator.hasNext()) {
+			String key = iterator.next();
+			Integer value = map.get(key);
+//			System.out.println(value);
+			
+			System.out.printf("%s 학생의 점수는 %d", key, value);
+		}
+		
+	}
+}

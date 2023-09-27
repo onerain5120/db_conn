@@ -1,0 +1,43 @@
+package collection_ex;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetEx {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Set<String> set = new HashSet<>();
+		
+		
+		set.add("Java");
+		set.add("Java");
+		set.add("SQL");
+		set.add("JDBC");
+		set.add("SPRING");
+		set.add("Spring");
+		set.add("SPRING");
+		set.add("SPRINGBoot");
+		
+		// 향상된 for문
+		for(String i : set) {
+			System.out.println(i);
+		}
+		
+		set.remove("JDBC");
+		
+		System.out.println("=================");
+		
+		for(String i : set) {
+			System.out.println(i);
+		}
+		
+		
+		
+		
+		
+		
+	}
+}

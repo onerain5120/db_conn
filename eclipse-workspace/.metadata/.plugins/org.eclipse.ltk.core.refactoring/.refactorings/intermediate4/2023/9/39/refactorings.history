@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;box_ex5.MeasureRunTimeEx.java&apos; to &apos;MeasureRunTimeEx_StringEx.java&apos;&#x0D;&#x0A;- Original project: &apos;intermediate4&apos;&#x0D;&#x0A;- Original element: &apos;box_ex5.MeasureRunTimeEx.java&apos;&#x0D;&#x0A;- Renamed element: &apos;box_ex5.MeasureRunTimeEx_StringEx.java&apos;" description="Rename compilation unit &apos;MeasureRunTimeEx.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;box_ex5{MeasureRunTimeEx.java" name="MeasureRunTimeEx_StringEx.java" references="false" stamp="1695776631175" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+package base_ex4;
+
+public class ClassEx {
+
+	
+	public static void main(String[] args) {
+		
+		Car car = new Car();
+		Class cls = car.getClass();
+		System.out.println(cls);
+		System.out.println(" : " + cls.getName());
+		
+	}
+}

@@ -1,0 +1,27 @@
+package generic_ex3;
+
+public class GenericEx {
+
+	static <T extends Number> boolean compare(T t1, T t2) {
+		
+		int intValue1 = t1.intValue();
+		int intValue2 = t2.intValue();
+		
+		return intValue1 == intValue2;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		boolean result = compare(10, 10);
+		System.out.println(result);
+		
+		boolean result2 = compare(10, 20);
+		System.out.println(result2);
+		
+		
+	}
+	
+}
